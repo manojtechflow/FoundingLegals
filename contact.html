@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - FoundingLegals</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">⚖</span>
+                        <span class="logo-text">Founding<span class="logo-highlight">Legals</span></span>
+                    </a>
+                    
+                    <div class="nav-menu" id="navMenu">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <div class="nav-dropdown">
+                            <a href="#" class="nav-link dropdown-trigger">Services <span class="dropdown-arrow">▼</span></a>
+                            <div class="dropdown-menu">
+                                <a href="service-incorporation.html" class="dropdown-item">Company Incorporation</a>
+                                <a href="service-gst.html" class="dropdown-item">GST Registration</a>
+                                <a href="service-dpiit.html" class="dropdown-item">DPIIT Certification</a>
+                                <a href="service-import-export.html" class="dropdown-item">Import Export Code</a>
+                                <a href="service-labour.html" class="dropdown-item">Labour Licences</a>
+                                <a href="service-fssai.html" class="dropdown-item">FSSAI License</a>
+                                <a href="service-iso.html" class="dropdown-item">ISO Certification</a>
+                                <a href="service-trademark.html" class="dropdown-item">Trademark Registration</a>
+                            </div>
+                        </div>
+                        <a href="pricing.html" class="nav-link">Pricing</a>
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </div>
+                    
+                    <button class="mobile-toggle" id="mobileToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Get In Touch</h1>
+                <p class="page-subtitle">We're here to help you with all your legal compliance needs</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <span class="section-label">Contact Us</span>
+                        <h2 class="contact-title">Let's Start Your Legal Journey</h2>
+                        <p class="contact-description">
+                            Have questions about our services? Want to discuss your startup's specific requirements? 
+                            Fill out the form and our team will get back to you within 24 hours.
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">📧</div>
+                                <div class="method-details">
+                                    <h4>Email Us</h4>
+                                    <a href="mailto:info@foundinglegals.com">info@foundinglegals.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">📞</div>
+                                <div class="method-details">
+                                    <h4>Call Us</h4>
+                                    <a href="tel:+919876543210">+91 98765 43210</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">📍</div>
+                                <div class="method-details">
+                                    <h4>Visit Us</h4>
+                                    <p>Mumbai, Maharashtra, India</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">🕐</div>
+                                <div class="method-details">
+                                    <h4>Business Hours</h4>
+                                    <p>Mon-Sat: 9:00 AM - 7:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company" placeholder="Your startup name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Service Interested In</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="incorporation">Company Incorporation</option>
+                                    <option value="gst">GST Registration</option>
+                                    <option value="dpiit">DPIIT Certification</option>
+                                    <option value="iec">Import Export Code</option>
+                                    <option value="labour">Labour Licences</option>
+                                    <option value="fssai">FSSAI License</option>
+                                    <option value="iso">ISO Certification</option>
+                                    <option value="trademark">Trademark Registration</option>
+                                    <option value="multiple">Multiple Services</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Tell us about your requirements..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        </form>
+                        <div class="form-success" id="formSuccess">
+                            <div class="success-icon">✓</div>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>We'll get back to you within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="appointment-section">
+            <div class="container">
+                <div class="appointment-card">
+                    <div class="appointment-content">
+                        <h2>Book a Free Consultation</h2>
+                        <p>Schedule a 30-minute call with our legal experts to discuss your startup's needs</p>
+                        <ul class="appointment-benefits">
+                            <li>✓ Free consultation with legal experts</li>
+                            <li>✓ Personalized guidance for your startup</li>
+                            <li>✓ No obligation, no hidden charges</li>
+                            <li>✓ Quick turnaround time</li>
+                        </ul>
+                        <a href="mailto:info@foundinglegals.com?subject=Appointment Request" class="btn btn-primary btn-large">
+                            📅 Schedule Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">⚖</span>
+                        <span class="logo-text" style="color: white;">Founding<span class="logo-highlight">Legals</span></span>
+                    </a>
+                    <p>Your trusted partner for startup legal compliance in India. We make legal simple.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="service-incorporation.html">Company Incorporation</a></li>
+                        <li><a href="service-gst.html">GST Registration</a></li>
+                        <li><a href="service-dpiit.html">DPIIT Certification</a></li>
+                        <li><a href="service-trademark.html">Trademark</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-links">
+                        <li>info@foundinglegals.com</li>
+                        <li>+91 98765 43210</li>
+                        <li>Mumbai, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FoundingLegals. All rights reserved.</p>
+                <a href="contact.html" class="book-appointment-btn">📅 Book Appointment</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
